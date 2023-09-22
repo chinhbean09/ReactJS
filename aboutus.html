@@ -29,9 +29,13 @@
                                 <li class="nav-item"><a class="nav-link" href="#"><span class="fa fa-list fa-lg"></span> Menu</a></li>
                                 <li class="nav-item"><a class="nav-link" href="./contactus.html"><span class="fa fa-address-card fa-lg"></span> Contact</a></li>
         	                </ul>   
-                        </div>         
-        	        </div>                                                                     
+                        </div>     
+                           
+        	        </div> 
+                    
+                                                                                      
         	</nav>
+            <div id="header"></div>
             </div>
         </div>
     </header>
@@ -234,7 +238,7 @@
 
     </div>
 
-    <footer class="footer">
+    <!-- <footer class="footer">
         <div class="container">
             <div class="row">             
                 <div class="col-4 offset-1 col-sm-2">
@@ -274,10 +278,18 @@
                 </div>
            </div>
         </div>
-    </footer>
+    </footer> -->
+    <div id="footer"></div>
     
 </body>
 <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+<script src="node_modules/jquery/dist/jquery.min.js"></script>
 <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
 <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script>
+    $(function(){
+        $("#header").load("header.html");
+        $("#footer").load("footer.html");
+    })
+</script>
 </html>
